@@ -10,7 +10,7 @@ resource "aws_security_group" "allow_tls" {
   description = var.sg_description
  
 
-    egress {
+  egress {
     from_port        = var.sg_from_port
     to_port          = var.sg_to_port
     protocol         = "-1"
