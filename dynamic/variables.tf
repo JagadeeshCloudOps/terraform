@@ -13,21 +13,15 @@ variable "sg_name" {
 variable "ingress_rules" {
     default = [
         {
-            from_port = 22
-            to_port = 0
-            protocol = "-1"
+            port = 22
             cidr_blocks = ["0.0.0.0/0"]
         },
         {
-            from_port = 80
-            to_port = 0
-            protocol = "-1"
+            port = 80
             cidr_blocks = ["0.0.0.0/0"]
         },
         {
-            from_port = 443
-            to_port = 0
-            protocol = "-1"
+            port = 443
             cidr_blocks = ["0.0.0.0/0"]
         }
     ]
